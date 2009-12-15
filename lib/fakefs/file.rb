@@ -283,6 +283,10 @@ module FakeFS
       raise NotImplementedError
     end
 
+    def binmode
+      self
+    end
+
     if RUBY_VERSION.to_f >= 1.9
       def binmode?
         raise NotImplementedError
